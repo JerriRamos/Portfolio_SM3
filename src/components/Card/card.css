@@ -1,0 +1,12 @@
+/* .card img {
+  width: 100%;
+} */
+.card {
+  width: 160px;
+  margin-left: 125px;
+  float: left;
+  margin-bottom: 69px;
+}
+.a {
+  float: left;
+}
