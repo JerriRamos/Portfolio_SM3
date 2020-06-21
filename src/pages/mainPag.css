@@ -1,8 +1,8 @@
-img {
+#div1_1 img {
   height: 470px;
   width: 700px;
 }
-p {
+#div1 p {
   margin-left: -80px;
   font-family: Abhaya Libre;
   font-style: normal;
@@ -11,7 +11,7 @@ p {
   line-height: 85px;
   color: #ffffff;
 }
-span {
+#div1 span {
   color: rgba(99, 100, 106, 0.91);
 }
 
@@ -59,7 +59,7 @@ span {
 }
 #div5 {
   background-color: #ffffff;
-  height: 636px;
+  height: 667px;
   width: 100%;
 }
 
@@ -108,7 +108,7 @@ span {
 
 #arrowUp {
   position: sticky;
-  bottom: 200px;
+  bottom: 180px;
   left: 1345px;
   color: #12002c;
 }
