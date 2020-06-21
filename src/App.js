@@ -1,8 +1,9 @@
 import React from "react";
 // import "./App.css";
+import MainPag from "./pages/mainPag";
 
 function App() {
-  return <div></div>;
+  return <MainPag />;
 }
 
 export default App;
