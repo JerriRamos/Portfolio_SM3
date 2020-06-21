@@ -1,0 +1,114 @@
+img {
+  height: 470px;
+  width: 700px;
+}
+p {
+  margin-left: -80px;
+  font-family: Abhaya Libre;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 85px;
+  color: #ffffff;
+}
+span {
+  color: rgba(99, 100, 106, 0.91);
+}
+
+#mainCenter {
+  height: 100%;
+  width: 1221px;
+  margin: 0 0 101px 0;
+}
+
+#div1 {
+  display: flex;
+  align-items: center;
+  height: 580px;
+  width: 1221px;
+  background: linear-gradient(
+    to right,
+    black 0%,
+    black 36%,
+    #060711 0%,
+    #060711 100%
+  );
+}
+
+#div1_1 {
+  height: 470px;
+  width: 700px;
+  margin-left: -101px;
+  margin-top: 10px;
+}
+
+#div2 {
+  background-color: #000000;
+  height: 400px;
+  width: 100%;
+}
+#div3 {
+  background-color: #f6f6f6;
+  height: 610px;
+  width: 100%;
+}
+#div4 {
+  background-color: #000000;
+  height: 2053px;
+  width: 100%;
+}
+#div5 {
+  background-color: #ffffff;
+  height: 636px;
+  width: 100%;
+}
+
+.about {
+  padding-left: 55px;
+  padding-top: 55px;
+  margin-left: 0;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  color: #ffffff;
+}
+.about2 {
+  padding-left: 55px;
+  padding-right: 700px;
+  margin-left: 0;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.skills {
+  padding-left: 55px;
+  padding-top: 55px;
+  margin-left: 0;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  color: black;
+}
+.skills2 {
+  padding-left: 55px;
+  padding-right: 700px;
+  margin-left: 0;
+  font-family: Abel;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: black;
+}
+
+#arrowUp {
+  position: sticky;
+  bottom: 200px;
+  left: 1345px;
+  color: #12002c;
+}
