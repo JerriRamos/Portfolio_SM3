@@ -2,18 +2,15 @@
   height: 470px;
   width: 700px;
 }
-#div1 p {
+#div1 span {
   margin-left: -80px;
   font-family: "Abhaya Libre";
   font-style: normal;
   font-weight: normal;
   font-size: 72px;
   line-height: 85px;
-  color: #ffffff;
+  color: #e4e4e4;
   text-shadow: 5px 5px black;
-}
-#div1 span {
-  color: rgba(99, 100, 106, 0.91);
 }
 
 #mainCenter {

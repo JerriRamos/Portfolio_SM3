@@ -26,11 +26,11 @@ export default class mainPag extends Component {
             <div id="div1_1">
               <img src={img} alt="avatar" className="avatar" />
             </div>
-            <p>
+            <span>
               <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
                 My name Jerri Ramos. A Software Developer based in Cabo Verde.
               </SplitText>
-            </p>
+            </span>
           </div>
         </section>
         <section id="section2">
