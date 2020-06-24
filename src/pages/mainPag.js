@@ -35,7 +35,7 @@ export default class mainPag extends Component {
           <p className="about">About me</p>
           <br />
           <p className="about2">
-            Hi, I'm Jeras – Software/Hardawre engineer from Cabo Verde. I'm
+            Hi, I'm Jeras – Software/Hardawre Engineer from Cabo Verde. I'm
             interested in Programming and everything connected with it.
             <br />
             <br />
