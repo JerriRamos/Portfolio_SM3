@@ -25,10 +25,10 @@ export default class nav extends Component {
           <li className="pd">
             <Link
               activeClass="active"
-              to="div5"
+              to="section5"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-53.25}
               duration={1000}
             >
               Contacts
@@ -37,10 +37,10 @@ export default class nav extends Component {
           <li className="pd">
             <Link
               activeClass="active"
-              to="div4"
+              to="section4"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-55}
               duration={1000}
             >
               Portfolio
@@ -49,10 +49,10 @@ export default class nav extends Component {
           <li className="pd">
             <Link
               activeClass="active"
-              to="div3"
+              to="section3"
               spy={true}
               smooth={true}
-              offset={-30}
+              offset={-56}
               duration={1000}
             >
               Skills
@@ -61,10 +61,10 @@ export default class nav extends Component {
           <li className="pd">
             <Link
               activeClass="active"
-              to="div2"
+              to="section2"
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-56}
               duration={1000}
             >
               About me

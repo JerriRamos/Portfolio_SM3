@@ -6,8 +6,6 @@
   position: fixed;
   top: 0;
   width: 1221px;
-  border-bottom-right-radius: 13px;
-  border-bottom-left-radius: 13px;
 }
 
 #nav li {
@@ -30,7 +28,7 @@
   font-family: Abel;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 #nav li a:hover:not(.active) {
@@ -54,7 +52,7 @@
   padding-right: 10px;
   padding-left: 55px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 .NobgColor {
