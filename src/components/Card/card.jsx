@@ -5,7 +5,7 @@ export default class card extends Component {
   render() {
     return (
       <div className="card">
-        <img src={this.props.url} alt="Avatar" width="120px" height="90px" />
+        <img src={this.props.url} alt="Avatar" width="100px" height="90px" />
         <div className="container">
           <h4>
             <b>{this.props.nome}</b>

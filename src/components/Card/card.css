@@ -1,12 +1,15 @@
-/* .card img {
-  width: 100%;
-} */
 .card {
   width: 160px;
   margin-left: 125px;
   float: left;
   margin-bottom: 69px;
+  transition: 0.5s;
 }
+.card:hover {
+  transform: translate(0, -20px);
+  opacity: 0.4;
+}
+
 .a {
   float: left;
 }
