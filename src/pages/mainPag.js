@@ -39,8 +39,8 @@ export default class mainPag extends Component {
             interested in Programming and everything connected with it.
             <br />
             <br />
-            I'm studying at courses "Engenharia informatica e sistema
-            computacionais" in University of Mindelo.
+            I'm studying at courses "Engenharia Informatica e Sistema
+            Computacionais" in University of Mindelo.
             <br />
             <br />
             Ready to implement excellent projects with wonderful people.
