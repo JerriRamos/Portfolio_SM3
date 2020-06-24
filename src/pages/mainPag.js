@@ -5,6 +5,16 @@ import img from "../img/1.jpg";
 import { Link } from "react-scroll";
 import "@fortawesome/fontawesome-free/css/all.css";
 import Card from "../components/Card/card";
+import SplitText from "react-pose-text";
+
+const charPoses = {
+  exit: { opacity: 0, y: 20 },
+  enter: {
+    opacity: 1,
+    y: 0,
+    delay: ({ charIndex }) => charIndex * 50,
+  },
+};
 
 export default class mainPag extends Component {
   render() {
@@ -13,12 +23,12 @@ export default class mainPag extends Component {
         <Navbar />
         <div id="div1">
           <div id="div1_1">
-            <img src={img} alt="" />
+            <img src={img} alt="avatar" className="avatar" />
           </div>
           <p>
-            I’m Jerri Ramos. <br /> A Software Developer
-            <br />
-            <span>based in Cabo Verde.</span>
+            <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
+              My name Jerri Ramos. A Software Developer based in Cabo Verde.
+            </SplitText>
           </p>
         </div>
         <div id="div2">
@@ -45,75 +55,75 @@ export default class mainPag extends Component {
           <Card
             url="https://cdn.icon-icons.com/icons2/1488/PNG/512/5347-github_102542.png"
             nome="GitHub Git"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="far fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="far fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
 
           <Card
             nome="Adobe Illustrator"
             url="https://upload.wikimedia.org/wikipedia/commons/d/d8/Adobe_Illustrator_Icon_CS6.png"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="far fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="far fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
           <Card
             nome="Php 5"
-            url="https://lh3.googleusercontent.com/proxy/fWf0PKiPW_iSHCCtlTPT7UpNiZ86kGcOfzYPRGm3mbD36KPXZjjJxl6FguLM1WtEGHqtSV9zqA1FQhVJg6tqM62v7f_mKEgSuHCsCjukpeY8AtGlaJjKQEdnrQxp_WWrzsOP05HIVXpxQ4d7ST-CQtCpHooUf7pi0jSF3mHEYss"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="far fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            url="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/2132470731553750209-512.png"
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="far fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
           <Card
             nome="Figma"
             url="https://4.bp.blogspot.com/-LiJZ5I8E7K8/XIe_GeI5glI/AAAAAAAAIuw/4Awu8j8r0P8TKBXzyxyslHEfplOlK9-6QCK4BGAYYCw/s1600/icon%2Bfigma%2Bvector.png"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="far fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="far fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
           <Card
             nome="WorPress"
-            url="https://4.bp.blogspot.com/-wHJwsBHdKzE/XDiQOO7lfLI/AAAAAAAAGv8/cjwqmp8CEdcZQ5NM4gYtd4O_kqD9dnNwwCK4BGAYYCw/s1600/logo%2Bwordpress.png"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="far fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            url="https://www.searchpng.com/wp-content/uploads/2019/02/Wordpress-Icon-PNG.png"
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="far fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
           <Card
             nome="Office"
             url="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-office-icon.png"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="fas fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="fas fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
           <Card
             nome="Windows"
             url="https://cdn.iconscout.com/icon/free/png-256/windows-xp-2-570110.png"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="fas fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="fas fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
           <Card
             nome="Ubuntu"
-            url="https://lh3.googleusercontent.com/proxy/e0rhFb_KNui3cy-Lm6565Y6C5tCjtoScmQeAmuPbwZFRmdBaTt1Ri-xcKND48I55vRCkAAHftkSNIoDOAGcuSKCW772xFkrgaEoF2aWtbU9QWZMClz3CwYACgAETUuJyrAKijtgKMjI0r_HQOiWlMWY"
-            star={<i class="fas fa-star"></i>}
-            star2={<i class="fas fa-star"></i>}
-            star3={<i class="fas fa-star"></i>}
-            star4={<i class="far fa-star"></i>}
-            star5={<i class="far fa-star"></i>}
+            url="https://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Folder-OS-Ubuntu-Alt-icon.png"
+            star={<i className="fas fa-star"></i>}
+            star2={<i className="fas fa-star"></i>}
+            star3={<i className="fas fa-star"></i>}
+            star4={<i className="far fa-star"></i>}
+            star5={<i className="far fa-star"></i>}
           />
         </div>
         <div id="div4">
