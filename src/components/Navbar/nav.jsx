@@ -3,10 +3,21 @@ import "./nav.css";
 import { Link } from "react-scroll";
 
 export default class nav extends Component {
+  //navBar code
+  state = {
+    bgcolor: true,
+  };
+  componentDidMount() {
+    document.addEventListener("scroll", () => {
+      window.scrollY < 70
+        ? this.setState({ bgcolor: true })
+        : this.setState({ bgcolor: false });
+    });
+  }
   render() {
     return (
       <div id="nav">
-        <ul>
+        <ul className={this.state.bgcolor ? "NobgColor" : "bgColorTransp"}>
           <li className="nome">
             <strong> J.C.RAMOS</strong>
             {/* eliminar depois o strong*/}
