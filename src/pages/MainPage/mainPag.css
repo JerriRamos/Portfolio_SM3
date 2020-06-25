@@ -259,7 +259,7 @@ button:hover {
   font-weight: bold;
 }
 .port1 {
-  background-image: url(../img/2.png);
+  background-image: url(../../img/2.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 442px;
@@ -267,7 +267,7 @@ button:hover {
   float: right;
 }
 .port2 {
-  background-image: url(../img/3.jpeg);
+  background-image: url(../../img/3.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 442px;
@@ -275,7 +275,7 @@ button:hover {
 }
 .port3 {
   float: right;
-  background-image: url(../img/4.jpg);
+  background-image: url(../../img/4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
@@ -283,7 +283,7 @@ button:hover {
   margin-top: 10px;
 }
 .port4 {
-  background-image: url(../img/5.jpg);
+  background-image: url(../../img/5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 432px;
@@ -292,7 +292,7 @@ button:hover {
 }
 .port5 {
   float: right;
-  background-image: url(../img/1.jpg);
+  background-image: url(../../img/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 640px;
@@ -300,7 +300,7 @@ button:hover {
   margin-top: 10px;
 }
 .port6 {
-  background-image: url(../img/6.jpg);
+  background-image: url(../../img/6.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
