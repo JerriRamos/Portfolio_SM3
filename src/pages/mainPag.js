@@ -136,12 +136,86 @@ export default class mainPag extends Component {
           <div id="div4">
             <p className="about">Portfolio</p>
             <br />
+            <p className="skills2" style={{ color: "white" }}>
+              My corrent works as
+            </p>
+            <br />
+            <br />
+            <div className="portMain">
+              <div className="port1">Proj1</div>
+              <div className="port2">Proj2</div>
+              <div className="port3">Proj3</div>
+              <div className="port4">Proj4</div>
+              <div className="port5">Proj5</div>
+              <div className="port6">Proj6</div>
+            </div>
           </div>
         </section>
         <section id="section5">
           <div id="div5">
             <p className="skills">Contats</p>
             <br />
+            <div className="mainCol">
+              <div className="col1">
+                <div className="cont">
+                  <i class="fas fa-phone-square-alt phone"></i>
+                  <ul>
+                    <li>Phone</li>
+                    <li>+235 9529899</li>
+                  </ul>
+                </div>
+                <div className="cont">
+                  <i class="fas fa-envelope-square envelope"></i>
+                  <ul>
+                    <li>Email</li>
+                    <li>jerryramos1995@gmail.com</li>
+                  </ul>
+                </div>
+                <div className="cont">
+                  <i class="fas fa-globe-europe globe"></i>
+                  <ul>
+                    <li>Location</li>
+                    <li>Cabo Verde, Sao Vicente</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col2">
+                <div className="cont">
+                  <i className="fab fa-linkedin linkedin"></i>
+                  <ul>
+                    <li>Linkedin</li>
+                    <li>linkedin.com/in/jeras1995</li>
+                  </ul>
+                </div>
+                <div className="cont">
+                  <i className="fab fa-facebook-square facebook"></i>
+                  <ul>
+                    <li>FaceBook</li>
+                    <li>facebook.com/jeras.dx.xd</li>
+                  </ul>
+                </div>
+                <div className="cont">
+                  <i className="fab fa-github github"></i>
+                  <ul>
+                    <li>GitHub</li>
+                    <li>github.com/JerriRamos</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col3">
+                <form>
+                  <h1 className="feed">Feedback!</h1>
+                  <input type="text" placeholder="Nome" />
+                  <input type="email" placeholder="Email" />
+                  <textarea placeholder="Digite sua Mensagem aqui" />
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+            <div className="copy">
+              <span className="span1">Copyright © 2020</span>{" "}
+              <span className="span2">Jeras.Dev</span>
+            </div>
           </div>
         </section>
         <Link
