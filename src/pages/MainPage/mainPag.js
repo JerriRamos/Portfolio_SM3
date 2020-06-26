@@ -17,6 +17,63 @@ const charPoses = {
 };
 
 export default class mainPag extends Component {
+  //Inicio
+  constructor(props) {
+    super(props);
+    this.state = {
+      newNome: "",
+      newEmail: "",
+      newMsg: "",
+      usuarios: [],
+    };
+  }
+
+  /*funcao input*/
+  handleInputNome = (e) => {
+    // console.log(e.target.value);
+    this.setState({ newNome: e.target.value });
+  };
+  handleInputEmail = (e) => {
+    // console.log(e.target.value);
+    this.setState({ newEmail: e.target.value });
+  };
+  handleInputMsg = (e) => {
+    // console.log(e.target.value);
+    this.setState({ newMsg: e.target.value });
+  };
+
+  componentDidMount() {
+    const usuarios = localStorage.getItem("usuarios");
+    if (usuarios) {
+      this.setState({ usuarios: JSON.parse(usuarios) });
+    }
+  }
+  /*salvar dados no storage*/
+  componentDidUpdate(_, prevState) {
+    if (prevState !== this.state.usuarios) {
+      localStorage.setItem("usuarios", JSON.stringify(this.state.usuarios));
+    }
+  }
+  /*add no state um novo student */
+  handleFromSubmit = (e) => {
+    e.preventDefault();
+    this.setState({
+      //   /*adicionar dados no array state*/
+      usuarios: [...this.state.usuarios, this.state.newUsuario],
+
+      newUsuario: {
+        nome: this.state.newNome,
+        email: this.state.newEmail,
+        msg: this.state.newMsg,
+      },
+      newNome: "",
+      newEmail: "",
+      newMsg: "",
+    });
+    // console.log(this.state.usuarios);
+  };
+  //Fim
+
   render() {
     return (
       <div id="mainCenter">
@@ -158,21 +215,21 @@ export default class mainPag extends Component {
             <div className="mainCol">
               <div className="col1">
                 <div className="cont">
-                  <i class="fas fa-phone-square-alt phone"></i>
+                  <i className="fas fa-phone-square-alt phone"></i>
                   <ul>
                     <li>Phone</li>
                     <li>+235 9529899</li>
                   </ul>
                 </div>
                 <div className="cont">
-                  <i class="fas fa-envelope-square envelope"></i>
+                  <i className="fas fa-envelope-square envelope"></i>
                   <ul>
                     <li>Email</li>
                     <li>jerryramos1995@gmail.com</li>
                   </ul>
                 </div>
                 <div className="cont">
-                  <i class="fas fa-globe-europe globe"></i>
+                  <i className="fas fa-globe-europe globe"></i>
                   <ul>
                     <li>Location</li>
                     <li>Cabo Verde, Sao Vicente</li>
@@ -205,10 +262,33 @@ export default class mainPag extends Component {
               <div className="col3">
                 <form>
                   <h1 className="feed">Feedback!</h1>
-                  <input type="text" placeholder="Nome" />
-                  <input type="email" placeholder="Email" />
-                  <textarea placeholder="Digite sua Mensagem aqui" />
-                  <button type="submit">Enviar</button>
+                  <input
+                    type="text"
+                    placeholder="Nome"
+                    id="nome"
+                    name="nome"
+                    onChange={this.handleInputNome}
+                    value={this.state.newNome}
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    name="email"
+                    onChange={this.handleInputEmail}
+                    value={this.state.newEmail}
+                  />
+                  <textarea
+                    placeholder="Digite sua Mensagem aqui"
+                    id="caixaTexto"
+                    name="caixaTexto"
+                    onChange={this.handleInputMsg}
+                    value={this.state.newMsg}
+                    type="text"
+                  />
+                  <button type="submit" onClick={this.handleFromSubmit}>
+                    Enviar
+                  </button>
                 </form>
               </div>
             </div>
@@ -219,7 +299,6 @@ export default class mainPag extends Component {
           </div>
         </section>
         <Link
-          activeClass="active"
           to="section1"
           spy={true}
           smooth={true}
