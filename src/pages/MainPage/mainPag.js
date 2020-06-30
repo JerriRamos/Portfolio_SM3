@@ -18,15 +18,12 @@ const charPoses = {
 
 export default class mainPag extends Component {
   //Inicio
-  constructor(props) {
-    super(props);
-    this.state = {
-      newNome: "",
-      newEmail: "",
-      newMsg: "",
-      usuarios: [],
-    };
-  }
+  state = {
+    newNome: "",
+    newEmail: "",
+    newMsg: "",
+    usuarios: [],
+  };
 
   /*funcao input*/
   handleInputNome = (e) => {
@@ -42,6 +39,7 @@ export default class mainPag extends Component {
     this.setState({ newMsg: e.target.value });
   };
 
+  //pegar os dados do LStr
   componentDidMount() {
     const usuarios = localStorage.getItem("usuarios");
     if (usuarios) {
@@ -73,8 +71,8 @@ export default class mainPag extends Component {
     // console.log(this.state.usuarios);
   };
   //Fim
-
   render() {
+    console.log(this.state.usuarios);
     return (
       <div id="mainCenter">
         <Navbar />
@@ -85,7 +83,7 @@ export default class mainPag extends Component {
             </div>
             <span>
               <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
-                My name Jerri Ramos. A Software Developer based in Cabo Verde.
+                My name Jerri Ramos. A Web Developer based in Cabo Verde.
               </SplitText>
             </span>
           </div>
@@ -199,12 +197,12 @@ export default class mainPag extends Component {
             <br />
             <br />
             <div className="portMain">
-              <div className="port1">Proj1</div>
-              <div className="port2">Proj2</div>
-              <div className="port3">Proj3</div>
-              <div className="port4">Proj4</div>
-              <div className="port5">Proj5</div>
-              <div className="port6">Proj6</div>
+              <div className="port1">Proj2</div>
+              <div className="port2">Proj1</div>
+              <div className="port3">Proj4</div>
+              <div className="port4">Proj3</div>
+              <div className="port5">Proj6</div>
+              <div className="port6">Proj5</div>
             </div>
           </div>
         </section>
