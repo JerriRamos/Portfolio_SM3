@@ -271,20 +271,22 @@ button:hover {
   background-image: url(../../img/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 442px;
-  width: 640px;
+  height: 402px;
+  width: 600px;
   float: right;
   font-weight: bold;
   text-shadow: 1px 1px black;
+  border: 1px solid white;
 }
 .port2 {
   background-image: url(../../img/3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 442px;
+  height: 402px;
   width: 400px;
   font-weight: bold;
   text-shadow: 1px 1px black;
+  border: 1px solid white;
 }
 .port3 {
   float: right;
@@ -293,30 +295,33 @@ button:hover {
   background-size: cover;
   width: 400px;
   height: 432px;
-  margin-top: 10px;
+  margin-top: 40px;
   font-weight: bold;
   text-shadow: 1px 1px black;
+  border: 1px solid white;
 }
 .port4 {
   background-image: url(../../img/5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 432px;
-  width: 640px;
-  margin-top: 10px;
+  width: 600px;
+  margin-top: 40px;
   font-weight: bold;
   text-shadow: 1px 1px black;
+  border: 1px solid white;
 }
 .port5 {
   float: right;
   background-image: url(../../img/7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 640px;
+  width: 600px;
   height: 350px;
-  margin-top: 10px;
+  margin-top: 40px;
   font-weight: bold;
   text-shadow: 1px 1px black;
+  border: 1px solid white;
 }
 .port6 {
   background-image: url(../../img/6.jpg);
@@ -324,7 +329,8 @@ button:hover {
   background-size: cover;
   height: 350px;
   width: 400px;
-  margin-top: 10px;
+  margin-top: 40px;
   font-weight: bold;
   text-shadow: 1px 1px black;
+  border: 1px solid white;
 }

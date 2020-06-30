@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../../components/Navbar/nav";
 import "./mainPag.css";
-import img from "../../img/1.jpg";
+import img from "../../img/Jerry.jpg";
 import { Link } from "react-scroll";
 import "@fortawesome/fontawesome-free/css/all.css";
 import Card from "../../components/Card/card";
